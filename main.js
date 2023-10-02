@@ -63,6 +63,11 @@ const MAP_LIST = [
  {"map_name":"Urbanguessr","map_id":"5b0a4b154559f41f70bba679","user_name":"Wolftrekker (YT)","count":19120,"type":"Handpicked","category":"World","tags":["Urban"]}
 ];
 
+for(const map of MAP_LIST) {
+	if(!map.tags) continue;
+	map.tags.sort((a,b) => a.localeCompare(b));
+}
+
 let maps = MAP_LIST.slice();
 let selectedCol = 'map_name';
 let selectedSortDir = 'asc';
@@ -87,7 +92,7 @@ function displayMaps(col, sort_dir) {
 	
 	let html = ``;
 
-	for(let map of maps) {
+	for(const map of maps) {
 		html += `<tr>`;
 		
 		html += `<td><a href="https://www.geoguessr.com/maps/${map.map_id}" target="_blank">${map.map_name}</a></td>`;
@@ -99,7 +104,7 @@ function displayMaps(col, sort_dir) {
 		html += `<td><div class="tags">`;
 
 		if(map.tags) {
-			for(let tag of map.tags) {
+			for(const tag of map.tags) {
 				html += `<span class="tag">${tag}</span>`;
 			}
 		}else{
@@ -116,7 +121,7 @@ function displayMaps(col, sort_dir) {
 	document.getElementById('maps').classList.toggle('is-hidden', maps.length === 0);
 	document.getElementById('no-results').classList.toggle('is-hidden', maps.length > 0);
 	
-	for (let th of document.querySelectorAll('#maps th[data-sortable]')) {
+	for (const th of document.querySelectorAll('#maps th[data-sortable]')) {
 		if(th.dataset.col === col) {
 			th.dataset.sortDir = sort_dir;
 		}else{
@@ -233,10 +238,26 @@ function getTags() {
 	}
 }
 
+function reset() {
+	maps = MAP_LIST.slice();
+
+	document.getElementById('search').value = '';
+	document.getElementById('clear-search').classList.add('is-hidden');
+
+	document.getElementById('filter-locs').value = '';
+	document.getElementById('filter-type').value = '';
+	document.getElementById('filter-category').value = '';
+	document.getElementById('filter-tag').value = '';
+
+	displayMaps(selectedCol, selectedSortDir);
+}
+
 function init() {
-	for (let th of document.querySelectorAll('#maps th[data-sortable]')) {
+	for (const th of document.querySelectorAll('#maps th[data-sortable]')) {
 		th.addEventListener('click', clickedSortableCol);
 	}
+
+	document.getElementById('reset').addEventListener('click', reset);
 
 	displayMaps(selectedCol, selectedSortDir);
 
