@@ -31,6 +31,7 @@ const MAP_LIST = [
  {"map_name":"An Updated Australia","map_id":"6346e9fa501e83f27df9b372","user_name":"miracle whips","count":104930,"type":"Generated","category":"Country","country":"Australia","country_code":"AU","tags":["Oceania"]},
  {"map_name":"Dirty World","map_id":"63f3ff1e0355e40ded075e0c","user_name":"slashP","count":79757,"type":"Generated","category":"World","tags":["Rural"]},
  {"map_name":"Extreme Regionguessing","map_id":"63cfd5ba9512ebc734807d3d","user_name":"BarrBarrBinks","count":105002,"type":"Generated","category":"World"},
+ {"map_name":"Geoguessr in 2069","map_id":"643b19d4490671c1730be963","user_name":"J I G E N","count":1004,"type":"Handpicked","category":"World","tags":["Unofficial Coverage"]},
  {"map_name":"Japan • 日本 60k+","map_id":"59cf49695d2de4db80351e6e","user_name":"Ustatsch","count":62157,"type":"Handpicked","category":"Country","country":"Japan","country_code":"JP","tags":["Asia"]},
  {"map_name":"Plonk It","map_id":"617033a3759abb000106b3cb","user_name":"Scrypero","count":6853,"type":"Handpicked","category":"World"},
  {"map_name":"Plonk It Extreme","map_id":"63b9865cbb7d2fa004826bbc","user_name":"Scrypero","count":680,"type":"Handpicked","category":"World"},
