@@ -105,6 +105,8 @@ function filterList() {
 	const searchVal = document.getElementById('search').value.toLowerCase().trim();
 	const shouldSearch = (!!searchVal && searchVal.length > 0);
 
+	document.getElementById('clear-search').classList.toggle('is-hidden', searchVal.length === 0);
+
 	const filterList = {
 		locations: document.getElementById('filter-locs').value,
 		type: document.getElementById('filter-type').value,
@@ -112,7 +114,7 @@ function filterList() {
 		tag: document.getElementById('filter-tag').value,
 	}
 
-	maps = MAP_LIST.slice().filter(map => {
+	maps = MAP_LIST.filter(map => {
 		// location count filter
 		switch(filterList.locations) {
 			case '5k': if(map.count < 5e3) return false; break;
@@ -175,6 +177,11 @@ function filterList() {
 	displayMaps(selectedCol, selectedSortDir);
 }
 
+function clearSearch() {
+	document.getElementById('search').value = '';
+	filterList();
+}
+
 function clickedSortableCol(e) {
 	e.preventDefault();
 
@@ -217,6 +224,7 @@ function init() {
 	document.getElementById('filter-type').addEventListener('change', filterList);
 	document.getElementById('filter-category').addEventListener('change', filterList);
 	document.getElementById('filter-tag').addEventListener('change', filterList);
+	document.getElementById('clear-search').addEventListener('click', clearSearch);
 }
 
 init();

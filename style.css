@@ -72,16 +72,31 @@ input, select {
 
 .field {
 	margin-top: 0.5rem;
+	position: relative;
 }
 
 .search-input {
 	min-width: 20rem;
 	display: block;
 	width: 100%;
+	padding-right: 3.5rem;
 }
 
 .search-input:focus {
 	outline: 1px solid rgba(255,255,255,0.25);
+}
+
+.clear-search {
+	position: absolute;
+	top: 0.6rem;
+	right: 1rem;
+	font-size: 2.2rem;
+	opacity: 0.25;
+	cursor: pointer;
+}
+
+.clear-search:hover {
+	opacity: 0.5;
 }
 
 .maps {
