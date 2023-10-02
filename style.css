@@ -1,0 +1,157 @@
+*, *:before, *:after {
+	box-sizing: border-box; 
+}
+
+html {
+	font-size: 62.5%;
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	height: 100%;
+	font-size: 1.4rem;
+	overflow: hidden;
+	background-color: #181818;
+	color: #c0c0c0;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	line-height: 1.4;
+}
+
+a {
+	color: #fecd19;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+input, select {
+	background: #0d0d0d;
+	color: #fff;
+	font: inherit;
+	border: none;
+	padding: 1rem 1.4rem;
+	border-radius: 0.4rem;
+}
+
+.is-hidden {
+	display: none !important;
+}
+
+.wrapper {
+	padding: 1.5rem 2rem;
+	max-width: 160rem;
+	margin: 0 auto;
+}
+
+.layout {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.filters {
+	flex: 0 0 auto;
+	border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.filters .wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4rem;
+	align-items: flex-end;
+}
+
+.filter-search {
+	flex: 1;
+}
+
+.field {
+	margin-top: 0.5rem;
+}
+
+.search-input {
+	min-width: 20rem;
+	display: block;
+	width: 100%;
+}
+
+.search-input:focus {
+	outline: 1px solid rgba(255,255,255,0.25);
+}
+
+.maps {
+	flex: 1;
+	overflow: auto;
+}
+
+table {
+	width: 100%;
+}
+
+th, td {
+	padding: 0.8rem 1.2rem;
+	vertical-align: middle;
+}
+
+th {
+	text-align: left;
+	cursor: default;
+	border-bottom: 1px solid rgba(255,255,255,0.1);
+	position: relative;
+}
+
+th, label {
+	font-weight: 500;
+	text-transform: uppercase;
+	font-size: 1.3rem;
+	color: #696969;
+}
+
+th[data-sortable]:hover {
+	color: #898989;
+}
+
+th[data-sortable]:after {
+	font-family: 'Font Awesome 6 Free';
+	font-weight: 900;
+	position: absolute;
+	margin-left: 0.5rem;
+}
+
+th[data-sort-dir="asc"]:after {
+	content: '\f0d8';
+}
+
+th[data-sort-dir="desc"]:after {
+	content: '\f0d7';
+}
+
+tbody tr:nth-child(2n) td {
+	background: rgba(255,255,255,0.025);
+}
+
+.tags {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.tag {
+	background: #2d2d2d;
+	font-size: 1.3rem;
+	padding: 0.3rem 0.6rem;
+	border-radius: 0.4rem;
+}
+
+.no-results {
+	padding: 2rem;
+	text-align: center;
+	color: #696969;
+	font-weight: 500;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>GeoGuessr Map Directory</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="style.css" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/57c017c42a.js" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+		<div class="layout">
+			<div class="filters">
+				<div class="wrapper">
+					<div class="filter filter-search">
+						<label for="search">Filter Maps</label>
+						<div class="field">
+							<input type="text" placeholder="Search..." class="search-input" name="search" id="search" />
+						</div>
+					</div>
+
+					<div class="filter">
+						<label for="filter-locs">Locations</label>
+						<div class="field">
+							<select name="filter-locs" id="filter-locs">
+								<option value="">Any</option>
+								<option value="5k">5k+</option>
+								<option value="10k">10k+</option>
+								<option value="25k">25k+</option>
+								<option value="50k">50k+</option>
+								<option value="75k">75k+</option>
+								<option value="100k">100k+</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="filter">
+						<label for="filter-type">Type</label>
+						<div class="field">
+							<select name="filter-type" id="filter-type">
+								<option value="">Any</option>
+								<option value="Generated">Generated</option>
+								<option value="Handpicked">Handpicked</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="filter">
+						<label for="filter-category">Category</label>
+						<div class="field">
+							<select name="filter-category" id="filter-category">
+								<option value="">Any</option>
+								<option value="World">World</option>
+								<option value="Continent">Continent</option>
+								<option value="Country">Country</option>
+								<option value="Region">Region</option>
+								<option value="Other">Other</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="filter">
+						<label for="filter-tag">Tag</label>
+						<div class="field">
+							<select name="filter-tag" id="filter-tag">
+								<option value="">Any</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="maps">
+				<div class="wrapper">
+					<table id="maps" cellspacing="0">
+						<thead>
+							<tr>
+								<th data-col="map_name" data-sortable>Map Name</th>
+								<th data-col="user_name" data-sortable>Creator</th>
+								<th data-col="count" data-sortable>Locations</th>
+								<th data-col="type" data-sortable>Type</th>
+								<th data-col="category" data-sortable>Category</th>
+								<th data-col="tags">Tags</th>
+							</tr>
+						</thead>
+						<tbody></tbody>
+					</table>
+
+					<div class="no-results is-hidden" id="no-results">There are no maps that match your search criteria. <a href="javascript:location.reload()">Clear filters?</a></div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="main.js"></script>
+	</body>
+</html>
