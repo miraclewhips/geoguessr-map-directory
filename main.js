@@ -15,6 +15,7 @@ const MAP_LIST = [
  {"map_name":"A Community World","map_id":"62a44b22040f04bd36e8a914","user_name":"MatePotato","count":103644,"type":"Handpicked","category":"World","tags":["Pinpointable"]},
  {"map_name":"A Complete World","map_id":"5cabd6f4e92b0c36e0d5e84f","user_name":"Cactus","count":10661,"type":"Handpicked","category":"World","tags":["Some Unofficial Coverage"]},
  {"map_name":"A Divisional World","map_id":"61121b1e88f8fa0001407821","user_name":"HugoCL","count":19054,"type":"Handpicked","category":"World","tags":["Themed","Borders"]},
+ {"map_name":"A Mural World – Official Street View Only","map_id":"637d2e28952d1f3af7564db7","user_name":"Hugo","count":2059,"type":"Handpicked","category":"World","tags":["Themed"]},
  {"map_name":"A Pinpointable World","map_id":"6029991c5048850001d572a9","user_name":"ttv.Sverre","count":3798,"type":"Handpicked","category":"World","tags":["Pinpointable"]},
  {"map_name":"A Random Pan and Zoom World","map_id":"650236876f4b3e608b9549c2","user_name":"PanzerShrek","count":104734,"type":"Generated","category":"World","tags":["Skewed","Meme"]},
  {"map_name":"A Rural World","map_id":"5be0de51fe3a84037ca36447","user_name":"Topotic (YT)","count":22465,"type":"Handpicked","category":"World","tags":["Rural"]},
@@ -43,6 +44,7 @@ const MAP_LIST = [
  {"map_name":"An Arbitrary United States","map_id":"61dfb63654e4730001e8faf5","user_name":"John Harvey Kellogg","count":83975,"type":"Generated","category":"Country","country":"United States of America","country_code":"US","tags":["North America"]},
  {"map_name":"An Arbitrary World","map_id":"6089bfcff6a0770001f645dd","user_name":"slashP","count":103796,"type":"Generated","category":"World"},
  {"map_name":"An Equitable Stochastic Populated World","map_id":"634351287b4eaf7edc173fb6","user_name":"MiraMatt","count":123115,"type":"Generated","category":"World"},
+ {"map_name":"An Extraordinary World","map_id":"5cd30a0d17e6fc441ceda867","user_name":"Alok","count":38412,"type":"Handpicked","category":"World","tags":["Themed","Some Unofficial Coverage"]},
  {"map_name":"An Improved World","map_id":"5b0a80f8596695b708122809","user_name":"Wolftrekker (YT)","count":111537,"type":"Handpicked","category":"World"},
  {"map_name":"An Oblique World","map_id":"642a97be3c5b7968a1eb1af3","user_name":"dbldk","count":10828,"type":"Handpicked","category":"World","tags":["Skewed"]},
  {"map_name":"An Updated Australia","map_id":"6346e9fa501e83f27df9b372","user_name":"miracle whips","count":104930,"type":"Generated","category":"Country","country":"Australia","country_code":"AU","tags":["Oceania"]},
@@ -56,6 +58,7 @@ const MAP_LIST = [
  {"map_name":"I Saw The Sign","map_id":"5cfda2c9bc79e16dd866104d","user_name":"Lynxy","count":2570,"type":"Handpicked","category":"World","tags":["Themed","Signs"]},
  {"map_name":"IntersectionGuessr","map_id":"61325442eadbec00018b6385","user_name":"slashP","count":100004,"type":"Generated","category":"World"},
  {"map_name":"Japan • 日本 60k+","map_id":"59cf49695d2de4db80351e6e","user_name":"Ustatsch","count":62157,"type":"Handpicked","category":"Country","country":"Japan","country_code":"JP","tags":["Asia"]},
+ {"map_name":"Our Fascinating Planet","map_id":"64eb69e1d37d724a9fb0c63d","user_name":"MatePotato","count":1300,"type":"Handpicked","category":"World","tags":["Themed","Beauty"]},
  {"map_name":"Plonk It","map_id":"617033a3759abb000106b3cb","user_name":"Scrypero","count":6853,"type":"Handpicked","category":"World","tags":["Themed"]},
  {"map_name":"Plonk It Extreme","map_id":"63b9865cbb7d2fa004826bbc","user_name":"Scrypero","count":680,"type":"Handpicked","category":"World","tags":["Themed"]},
  {"map_name":"Regionguessing","map_id":"62e821d51775c653cc836849","user_name":"Steve","count":130052,"type":"Generated","category":"World"},
@@ -72,13 +75,31 @@ let maps = MAP_LIST.slice();
 let selectedCol = 'map_name';
 let selectedSortDir = 'asc';
 
+function parseSortItem(item) {
+	if(typeof item === 'string') {
+		const s = item.toLowerCase();
+		const prefixes = ['the ', 'an ', 'a '];
+
+		for(let p of prefixes) {
+			if(s.startsWith(p)) {
+				return s.replace(p, '');
+			}
+		}
+		
+
+		return s;
+	}
+
+	return item;
+}
+
 function displayMaps(col, sort_dir) {
 	selectedCol = col;
 	selectedSortDir = sort_dir;
 
 	maps.sort((a, b) => {
-		a = a[col];
-		b = b[col];
+		a = parseSortItem(a[col]);
+		b = parseSortItem(b[col]);
 
 		if(typeof a === 'string' || typeof b === 'string') {
 			if(sort_dir === 'desc') {
