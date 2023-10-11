@@ -61,6 +61,7 @@ const MAP_LIST = [
  {"map_name":"Our Fascinating Planet","map_id":"64eb69e1d37d724a9fb0c63d","user_name":"MatePotato","count":1300,"type":"Handpicked","category":"World","tags":["Themed","Beauty"]},
  {"map_name":"Plonk It","map_id":"617033a3759abb000106b3cb","user_name":"Scrypero","count":6853,"type":"Handpicked","category":"World","tags":["Themed"]},
  {"map_name":"Plonk It Extreme","map_id":"63b9865cbb7d2fa004826bbc","user_name":"Scrypero","count":680,"type":"Handpicked","category":"World","tags":["Themed"]},
+ {"map_name":"Polska Gurom","map_id":"65269cc7855146f08067fcd4","user_name":"miracle whips","count":104949,"type":"Generated","category":"Country","country":"Poland","country_code":"PL","tags":["Europe"]},
  {"map_name":"Regionguessing","map_id":"62e821d51775c653cc836849","user_name":"Steve","count":130052,"type":"Generated","category":"World"},
  {"map_name":"Terminus","map_id":"64919f3c95165ff26469091a","user_name":"RollinHill","count":90639,"type":"Generated","category":"World","tags":["Themed"]},
  {"map_name":"Urbanguessr","map_id":"5b0a4b154559f41f70bba679","user_name":"Wolftrekker (YT)","count":19120,"type":"Handpicked","category":"World","tags":["Urban"]}
@@ -80,7 +81,7 @@ function parseSortItem(item) {
 		const s = item.toLowerCase();
 		const prefixes = ['the ', 'an ', 'a '];
 
-		for(let p of prefixes) {
+		for(const p of prefixes) {
 			if(s.startsWith(p)) {
 				return s.replace(p, '');
 			}
