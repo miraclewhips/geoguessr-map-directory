@@ -66,7 +66,7 @@ const MAP_LIST = [
 	{"map_name":"I Saw The Sign","map_id":"5cfda2c9bc79e16dd866104d","user_name":"Lynxy","count":2570,"type":"Handpicked","category":"World","tags":["Themed","Signs"]},
 	{"map_name":"IntersectionGuessr","map_id":"61325442eadbec00018b6385","user_name":"slashP","count":100004,"type":"Generated","category":"World"},
 	{"map_name":"Japan • 日本 60k+","map_id":"59cf49695d2de4db80351e6e","user_name":"Ustatsch","count":62157,"type":"Handpicked","category":"Country","country":"Japan","country_code":"JP","tags":["Asia"]},
-	{"map_name":"Less-Extreme Regiongeussing","map_id":"658a3ef12255cca9e7f39c06","user_name":"BarrBarrBinks","count":110000,"type":"Generated","category":"World"},
+	{"map_name":"Less-Extreme Regionguessing","map_id":"658a3ef12255cca9e7f39c06","user_name":"BarrBarrBinks","count":110000,"type":"Generated","category":"World"},
 	{"map_name":"Our Fascinating Planet","map_id":"64eb69e1d37d724a9fb0c63d","user_name":"MatePotato","count":1300,"type":"Handpicked","category":"World","tags":["Themed","Beauty"]},
 	{"map_name":"Plonk It","map_id":"617033a3759abb000106b3cb","user_name":"Scrypero","count":6853,"type":"Handpicked","category":"World","tags":["Themed"]},
 	{"map_name":"Plonk It Extreme","map_id":"63b9865cbb7d2fa004826bbc","user_name":"Scrypero","count":680,"type":"Handpicked","category":"World","tags":["Themed"]},
