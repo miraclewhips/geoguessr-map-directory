@@ -10,7 +10,6 @@ const MAP_LIST = [
 	{"map_name":"A Balanced South Africa","map_id":"62eb2b6e9e3a000003c039ad","user_name":"Jupa","count":49856,"type":"Generated","category":"Country","country":"South Africa","country_code":"ZA","tags":["Africa"]},
 	{"map_name":"A Balanced Spain","map_id":"62f439cfe46df79befe5c5f8","user_name":"John Harvey Kellogg","count":100000,"type":"Generated","category":"Country","country":"Spain","country_code":"ES","tags":["Europe"]},
 	{"map_name":"A Balanced World","map_id":"5d73f83d82777cb5781464f2","user_name":"Debre","count":21600,"type":"Handpicked","category":"World"},
-	{"map_name":"A Borderful World","map_id":"658aca2ac12126a89d3a754d","user_name":"miracle whips","count":74874,"type":"Generated","category":"World","tags":["Themed","Borders"]},
 	{"map_name":"A Bridged World","map_id":"643414094f0040a1616c3e5f","user_name":"[TNT] Kirania","count":100254,"type":"Generated","category":"World","tags":["Themed"]},
 	{"map_name":"A Community Europe","map_id":"642879e3292b51987fb56fe0","user_name":"Simi","count":43688,"type":"Handpicked","category":"Continent","tags":["Europe"]},
 	{"map_name":"A Community USA","map_id":"635c797dac045a96b9333016","user_name":"UltraTech66","count":49995,"type":"Handpicked","category":"Country","country":"United States of America","country_code":"US","tags":["North America"]},
