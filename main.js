@@ -58,7 +58,7 @@ const MAP_LIST = [
 	{"map_name":"An Updated Australia","map_id":"6346e9fa501e83f27df9b372","user_name":"miracle whips","count":104930,"type":"Generated","category":"Country","country":"Australia","country_code":"AU","tags":["Oceania"]},
 	{"map_name":"An Updated Japan 日本","map_id":"636b89fb831db5336dde1d9e","user_name":"miracle whips","count":105740,"type":"Generated","category":"Country","country":"Japan","country_code":"JP","tags":["Asia"]},
 	{"map_name":"An Updated New Zealand (NZ)","map_id":"633bcf49a5516b517a1fb7d7","user_name":"miracle whips","count":104536,"type":"Generated","category":"Country","country":"New Zealand","country_code":"NZ","tags":["Oceania"]},
-	{"map_name":"An Updated Skewed World","map_id":"63ab0ab10e0b6b46cd043011","user_name":"miracle whips","count":129316,"type":"Generated","category":"World","tags":["Skewed"]},
+	{"map_name":"An Updated Skewed World","map_id":"63ab0ab10e0b6b46cd043011","user_name":"miracle whips","count":130317,"type":"Generated","category":"World","tags":["Skewed"]},
 	{"map_name":"Beauty of Streetview","map_id":"62c35b74d5781e3aba706c8a","user_name":"ProjectBloom","count":1396,"type":"Handpicked","category":"World","tags":["Themed","Beauty"]},
 	{"map_name":"City Skylines","map_id":"5dd60f7a44d2a445e4ae6171","user_name":"Radu C","count":1190,"type":"Handpicked","category":"World","tags":["Themed","Urban","Some Unofficial Coverage"]},
 	{"map_name":"Dirty World","map_id":"63f3ff1e0355e40ded075e0c","user_name":"slashP","count":79757,"type":"Generated","category":"World","tags":["Rural"]},
