@@ -25,6 +25,7 @@ const MAP_LIST = [
 	{"map_name":"A Skewed World","map_id":"6165f7176c26ac00016bca3d","user_name":"Mars","count":65514,"type":"Generated","category":"World","tags":["Skewed"]},
 	{"map_name":"A Soiled World","map_id":"607d8ba950996a00015439cc","user_name":"Havrd","count":1774,"type":"Handpicked","category":"World","tags":["Themed","Skewed"]},
 	{"map_name":"A Stochastic Populated World","map_id":"61f5026376f7be0001e1eb84","user_name":"MiraMatt","count":128695,"type":"Generated","category":"World"},
+	{"map_name":"A Temporal World","map_id":"659521cc465cd313b9101c94","user_name":"miracle whips","count":105367,"type":"Generated","category":"World"},
 	{"map_name":"A Totally Normal Zoom World","map_id":"61c24e2a3f5016000156ed74","user_name":"ananananananananananananananah","count":2561,"type":"Generated","category":"World","tags":["Skewed","Meme"]},
 	{"map_name":"A Varied World","map_id":"64ce812adc7614680516ff8c","user_name":"hogmaniA","count":85001,"type":"Handpicked","category":"World"},
 	{"map_name":"A Vegetation World","map_id":"5d42203441d2a43c1cd611a8","user_name":"Alok","count":31216,"type":"Handpicked","category":"World","tags":["Themed","Vegetation","Some Unofficial Coverage"]},
