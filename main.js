@@ -58,7 +58,7 @@ const MAP_LIST = [
 	{"map_name":"An Improved World (no shitcam)","map_id":"654be9dc345a6aa922139157","user_name":"Wolftrekker (YT)","count":110000,"type":"Handpicked","category":"World"},
 	{"map_name":"An Oblique World","map_id":"642a97be3c5b7968a1eb1af3","user_name":"dbldk","count":10828,"type":"Handpicked","category":"World","tags":["Skewed"]},
 	{"map_name":"An Official World","map_id":"652ba0d9002aa0d36f996153","user_name":"La Ligue Geoguessr","count":110100,"type":"Handpicked","category":"World"},
-	{"map_name":"An Updated Australia","map_id":"6346e9fa501e83f27df9b372","user_name":"miracle whips","count":104930,"type":"Generated","category":"Country","country":"Australia","country_code":"AU","tags":["Oceania"]},
+	{"map_name":"An Updated Australia","map_id":"6346e9fa501e83f27df9b372","user_name":"miracle whips","count":133713,"type":"Generated","category":"Country","country":"Australia","country_code":"AU","tags":["Oceania"]},
 	{"map_name":"An Updated Japan 日本","map_id":"636b89fb831db5336dde1d9e","user_name":"miracle whips","count":105740,"type":"Generated","category":"Country","country":"Japan","country_code":"JP","tags":["Asia"]},
 	{"map_name":"An Updated New Zealand (NZ)","map_id":"633bcf49a5516b517a1fb7d7","user_name":"miracle whips","count":104536,"type":"Generated","category":"Country","country":"New Zealand","country_code":"NZ","tags":["Oceania"]},
 	{"map_name":"An Updated Skewed World","map_id":"63ab0ab10e0b6b46cd043011","user_name":"miracle whips","count":133813,"type":"Generated","category":"World","tags":["Skewed"]},
