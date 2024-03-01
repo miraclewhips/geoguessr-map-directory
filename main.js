@@ -23,7 +23,7 @@ const MAP_LIST = [
 	{"map_name":"A Rainbolt World","map_id":"65c86935d327035509fd616f","user_name":"rainbolt","count":110993,"type":"Generated","category":"World"},
 	{"map_name":"A Random Pan and Zoom World","map_id":"650236876f4b3e608b9549c2","user_name":"PanzerShrek","count":104734,"type":"Generated","category":"World","tags":["Skewed","Meme"]},
 	{"map_name":"A Rural World","map_id":"5be0de51fe3a84037ca36447","user_name":"Topotic (YT)","count":22465,"type":"Handpicked","category":"World","tags":["Rural"]},
-	{"map_name":"A Skewed Rural World","map_id":"65d2fd35db7bd9b93b2a8a1b","user_name":"miracle whips","count":127872,"type":"Generated","category":"World","tags":["Skewed"]},
+	{"map_name":"A Skewed Rural World","map_id":"65d2fd35db7bd9b93b2a8a1b","user_name":"miracle whips","count":127872,"type":"Generated","category":"World","tags":["Skewed","Rural"]},
 	{"map_name":"A Skewed World","map_id":"6165f7176c26ac00016bca3d","user_name":"Mars","count":65514,"type":"Generated","category":"World","tags":["Skewed"]},
 	{"map_name":"A Soiled World","map_id":"607d8ba950996a00015439cc","user_name":"Havrd","count":1774,"type":"Handpicked","category":"World","tags":["Themed","Skewed"]},
 	{"map_name":"A Stochastic Populated World","map_id":"61f5026376f7be0001e1eb84","user_name":"MiraMatt","count":128695,"type":"Generated","category":"World"},
