@@ -88,7 +88,8 @@ const MAP_LIST = [
  {"map_name":"Regionguessing","map_id":"62e821d51775c653cc836849","user_name":"Steve","count":130052,"type":"Generated","category":"World"},
  {"map_name":"Terminus","map_id":"64919f3c95165ff26469091a","user_name":"RollinHill","count":90639,"type":"Generated","category":"World","tags":["Themed"]},
  {"map_name":"Unique Roads of the World","map_id":"65b0b6616c467ffd6f906dbb","user_name":"Figsy_Games","count":12730,"type":"Handpicked","category":"World","tags":["Themed"]},
- {"map_name":"Urbanguessr","map_id":"5b0a4b154559f41f70bba679","user_name":"Wolftrekker (YT)","count":19120,"type":"Handpicked","category":"World","tags":["Urban"]}
+ {"map_name":"Urbanguessr","map_id":"5b0a4b154559f41f70bba679","user_name":"Wolftrekker (YT)","count":19120,"type":"Handpicked","category":"World","tags":["Urban"]},
+ {"map_name":"Whips World","map_id":"657367970f2f56450906a108","user_name":"miracle whips","count":1266,"type":"Handpicked","category":"World","tags":["Themed"]}
 ];
 
 for(const map of MAP_LIST) {
