@@ -82,9 +82,10 @@
 							<tr>
 								<th data-col="map_name" data-sortable>Map Name</th>
 								<th data-col="user_name" data-sortable>Creator</th>
-								<th data-col="count" data-sortable>Locations</th>
+								<th data-col="count" data-dir="desc" data-sortable>Locations</th>
 								<th data-col="type" data-sortable>Type</th>
 								<th data-col="category" data-sortable>Category</th>
+								<th data-col="updated" data-dir="desc" data-sortable>Updated</th>
 								<th data-col="tags">Tags</th>
 							</tr>
 						</thead>
@@ -92,6 +93,8 @@
 					</table>
 
 					<div class="no-results is-hidden" id="no-results">There are no maps that match your search criteria. <a href="#" id="reset">Clear filters?</a></div>
+
+					<p class="info">Map details last updated: <span id="updated-date"></span>. Contact miraclewhips on Discord for any map suggestions or inaccuracies.</p>
 				</div>
 			</div>
 		</div>

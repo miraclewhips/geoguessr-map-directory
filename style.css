@@ -170,3 +170,8 @@ tbody tr:nth-child(2n) td {
 	color: #696969;
 	font-weight: 500;
 }
+
+.info {
+	color: #696969;
+	text-align: center;
+}
