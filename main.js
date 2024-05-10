@@ -166,11 +166,11 @@ const DATA = {"maps":[
 	{"map_name":"Sao Tome (NEW UPDATE!)","map_id":"6606b66f1f2b17a397484db2","user_name":"Cookie (YT)","type":"Generated","category":"Country","country":"Sao Tome and Principe","country_code":"ST","tags":["Africa"],"updated":"2024-03-30T16:05:27.6490000Z","count":6604},
 	{"map_name":"Serbia/Србија","map_id":"5b19d2cc59669593c4ce9355","user_name":"Topotic (YT)","type":"Generated","category":"Country","country":"Serbia","country_code":"RS","tags":["Europe"],"updated":"2020-03-11T19:10:41.2980000Z","count":4556},
 	{"map_name":"Terminus","map_id":"64919f3c95165ff26469091a","user_name":"RollinHill","type":"Generated","category":"World","tags":["Themed"],"updated":"2024-04-29T15:01:31.3090000Z","count":91714},
-	{"map_name":"The C . U . M .  Zone","map_id":"63d87f437a12b46189cfc738","user_name":"miracle whips","type":"Generated","category":"Other","tags":["North America"],"updated":"2023-01-31T03:11:13.8800000Z","count":105000},
+	{"map_name":"The C . U . M .  Zone","map_id":"63d87f437a12b46189cfc738","user_name":"miracle whips","type":"Generated","category":"Other","tags":["North America"],"updated":"2024-05-10T10:07:37.5060000Z","count":104750},
 	{"map_name":"Unique Roads of the World","map_id":"65b0b6616c467ffd6f906dbb","user_name":"Figsy_Games","type":"Handpicked","category":"World","tags":["Themed"],"updated":"2024-04-29T16:03:12.9760000Z","count":13941},
 	{"map_name":"Urbanguessr","map_id":"5b0a4b154559f41f70bba679","user_name":"Wolftrekker (YT)","type":"Handpicked","category":"World","tags":["Urban"],"updated":"2023-10-21T19:49:40.8620000Z","count":19120},
 	{"map_name":"Whips World","map_id":"657367970f2f56450906a108","user_name":"miracle whips","type":"Handpicked","category":"World","updated":"2024-04-30T06:51:35.9786765+00:00","count":1274}
-],"date":"2024-05-10T09:42:47.928Z"};
+],"date":"2024-05-10T10:09:34.561Z"};
 
 for(const map of DATA.maps) {
 	if(!map.tags) continue;
